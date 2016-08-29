@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3172F0E51D74C54500F55511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172F0E41D74C54500F55511 /* AppDelegate.swift */; };
-		3172F0E71D74C54500F55511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172F0E61D74C54500F55511 /* ViewController.swift */; };
 		3172F0EA1D74C54500F55511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3172F0E81D74C54500F55511 /* Main.storyboard */; };
 		3172F0EC1D74C54500F55511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3172F0EB1D74C54500F55511 /* Assets.xcassets */; };
 		3172F0EF1D74C54500F55511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3172F0ED1D74C54500F55511 /* LaunchScreen.storyboard */; };
@@ -18,11 +17,10 @@
 /* Begin PBXFileReference section */
 		3172F0E11D74C54400F55511 /* vkyrse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkyrse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3172F0E41D74C54500F55511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3172F0E61D74C54500F55511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3172F0E91D74C54500F55511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3172F0EB1D74C54500F55511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3172F0EB1D74C54500F55511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		3172F0EE1D74C54500F55511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3172F0F01D74C54500F55511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3172F0F01D74C54500F55511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		AC9F033EA2D9421A0A4759F8 /* Pods_vkyrse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vkyrse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D0057759D2BAFF9566D4BD /* Pods-vkyrse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkyrse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse.debug.xcconfig"; sourceTree = "<group>"; };
 		EEDDE0F7586591E791EC637F /* Pods-vkyrse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkyrse.release.xcconfig"; path = "Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,13 +60,68 @@
 			isa = PBXGroup;
 			children = (
 				3172F0E41D74C54500F55511 /* AppDelegate.swift */,
-				3172F0E61D74C54500F55511 /* ViewController.swift */,
+				319F65CF1D74CC6600D4E4EE /* Classes */,
+				319F65CE1D74CA6A00D4E4EE /* SupportingFiles */,
+			);
+			path = vkyrse;
+			sourceTree = "<group>";
+		};
+		319F65CE1D74CA6A00D4E4EE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				3172F0E81D74C54500F55511 /* Main.storyboard */,
 				3172F0EB1D74C54500F55511 /* Assets.xcassets */,
 				3172F0ED1D74C54500F55511 /* LaunchScreen.storyboard */,
 				3172F0F01D74C54500F55511 /* Info.plist */,
 			);
-			path = vkyrse;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		319F65CF1D74CC6600D4E4EE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				319F65D01D74CC6600D4E4EE /* Managers */,
+				319F65D11D74CC6600D4E4EE /* MVC */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		319F65D01D74CC6600D4E4EE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		319F65D11D74CC6600D4E4EE /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				319F65D21D74CC6600D4E4EE /* Controller */,
+				319F65D31D74CC6600D4E4EE /* Model */,
+				319F65D41D74CC6600D4E4EE /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		319F65D21D74CC6600D4E4EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		319F65D31D74CC6600D4E4EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		319F65D41D74CC6600D4E4EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3C3D764EF9419E6CCA22499D /* Frameworks */ = {
@@ -210,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3172F0E71D74C54500F55511 /* ViewController.swift in Sources */,
 				3172F0E51D74C54500F55511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +276,7 @@
 				3172F0E91D74C54500F55511 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3172F0ED1D74C54500F55511 /* LaunchScreen.storyboard */ = {
@@ -232,6 +285,7 @@
 				3172F0EE1D74C54500F55511 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
