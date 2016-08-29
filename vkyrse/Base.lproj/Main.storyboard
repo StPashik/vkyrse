@@ -4,6 +4,20 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </mutableArray>
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-MediumItalic.ttf">
+            <string>Lato-MediumItalic</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,11 +30,88 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD → RUB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-Tw-nYr">
+                                <rect key="frame" x="20" y="167.5" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tD4-ju-vXS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51,705" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-rI-kKS">
+                                <rect key="frame" x="20" y="193.5" width="560" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cx2-AY-PdL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="80"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axy-sW-R2t">
+                                <rect key="frame" x="20" y="288.5" width="560" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="jPV-wd-UHv"/>
+                                </constraints>
+                                <string key="text">Со вчерашнего дня доллар
+вырос на 1 процент</string>
+                                <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ОБНОВЛЕНО В 17:05" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKZ-aH-Het">
+                                <rect key="frame" x="53" y="559" width="494" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xh0-kN-hLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="11"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axs-uo-O9h">
+                                <rect key="frame" x="5" y="550" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="XNi-NQ-9LH"/>
+                                    <constraint firstAttribute="height" constant="40" id="wcl-Gt-AYp"/>
+                                </constraints>
+                                <state key="normal" image="Menu"/>
+                                <connections>
+                                    <action selector="compareMenuTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pab-5I-3wx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bKZ-aH-Het" secondAttribute="bottom" constant="20" id="4KM-uI-iYL"/>
+                            <constraint firstAttribute="trailing" secondItem="axy-sW-R2t" secondAttribute="trailing" constant="20" id="5ER-pH-6j4"/>
+                            <constraint firstItem="KR9-rI-kKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="FJP-tN-bSw"/>
+                            <constraint firstItem="axy-sW-R2t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Lrp-mX-W20"/>
+                            <constraint firstItem="axy-sW-R2t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="9" id="MVb-Hq-QqN"/>
+                            <constraint firstAttribute="trailing" secondItem="bKZ-aH-Het" secondAttribute="trailing" constant="53" id="QiU-IT-hhz"/>
+                            <constraint firstItem="axy-sW-R2t" firstAttribute="top" secondItem="KR9-rI-kKS" secondAttribute="bottom" constant="15" id="Qwq-KS-gql"/>
+                            <constraint firstAttribute="trailing" secondItem="Uj1-Tw-nYr" secondAttribute="trailing" constant="20" id="RkW-7J-YBk"/>
+                            <constraint firstItem="KR9-rI-kKS" firstAttribute="top" secondItem="Uj1-Tw-nYr" secondAttribute="bottom" constant="5" id="XMq-Xd-sTd"/>
+                            <constraint firstItem="Axs-uo-O9h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="YRO-40-NwD"/>
+                            <constraint firstItem="Uj1-Tw-nYr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="d1G-Ky-UyW"/>
+                            <constraint firstItem="bKZ-aH-Het" firstAttribute="leading" secondItem="Axs-uo-O9h" secondAttribute="trailing" constant="8" id="fJM-xE-cpd"/>
+                            <constraint firstAttribute="trailing" secondItem="KR9-rI-kKS" secondAttribute="trailing" constant="20" id="r6J-3X-1vA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Axs-uo-O9h" secondAttribute="bottom" constant="10" id="rlM-07-UW3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currencyTitleLabel" destination="Uj1-Tw-nYr" id="gTw-M7-5wd"/>
+                        <outlet property="lastUpdateLabel" destination="bKZ-aH-Het" id="pg5-Ts-cAr"/>
+                        <outlet property="percentsLabel" destination="axy-sW-R2t" id="3za-kJ-mer"/>
+                        <outlet property="rateLabel" destination="KR9-rI-kKS" id="wOq-tV-Wlx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="563" y="364"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Menu" width="21" height="13"/>
+    </resources>
 </document>

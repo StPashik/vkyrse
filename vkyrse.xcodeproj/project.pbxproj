@@ -15,6 +15,10 @@
 		319F65D81D74D25500D4E4EE /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F65D71D74D25500D4E4EE /* Currency.swift */; };
 		319F65DA1D74D96000D4E4EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F65D91D74D96000D4E4EE /* MainViewController.swift */; };
 		319F65DD1D74E6F500D4E4EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F65DC1D74E6F500D4E4EE /* Extensions.swift */; };
+		319F65E31D74F64C00D4E4EE /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319F65DF1D74F64C00D4E4EE /* Lato-Black.ttf */; };
+		319F65E41D74F64C00D4E4EE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319F65E01D74F64C00D4E4EE /* Lato-Bold.ttf */; };
+		319F65E51D74F64C00D4E4EE /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319F65E11D74F64C00D4E4EE /* Lato-MediumItalic.ttf */; };
+		319F65E61D74F64C00D4E4EE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 319F65E21D74F64C00D4E4EE /* Lato-Regular.ttf */; };
 		9FF3E5B1DC6D343E72D181E6 /* Pods_vkyrse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F033EA2D9421A0A4759F8 /* Pods_vkyrse.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		319F65D71D74D25500D4E4EE /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		319F65D91D74D96000D4E4EE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		319F65DC1D74E6F500D4E4EE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		319F65DF1D74F64C00D4E4EE /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		319F65E01D74F64C00D4E4EE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		319F65E11D74F64C00D4E4EE /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		319F65E21D74F64C00D4E4EE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		AC9F033EA2D9421A0A4759F8 /* Pods_vkyrse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vkyrse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D0057759D2BAFF9566D4BD /* Pods-vkyrse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkyrse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse.debug.xcconfig"; sourceTree = "<group>"; };
 		EEDDE0F7586591E791EC637F /* Pods-vkyrse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkyrse.release.xcconfig"; path = "Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 		319F65CE1D74CA6A00D4E4EE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				319F65DE1D74F64C00D4E4EE /* Fonts */,
 				3172F0E81D74C54500F55511 /* Main.storyboard */,
 				3172F0EB1D74C54500F55511 /* Assets.xcassets */,
 				3172F0ED1D74C54500F55511 /* LaunchScreen.storyboard */,
@@ -142,6 +151,17 @@
 				319F65DC1D74E6F500D4E4EE /* Extensions.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		319F65DE1D74F64C00D4E4EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				319F65DF1D74F64C00D4E4EE /* Lato-Black.ttf */,
+				319F65E01D74F64C00D4E4EE /* Lato-Bold.ttf */,
+				319F65E11D74F64C00D4E4EE /* Lato-MediumItalic.ttf */,
+				319F65E21D74F64C00D4E4EE /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3C3D764EF9419E6CCA22499D /* Frameworks */ = {
@@ -222,7 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319F65E31D74F64C00D4E4EE /* Lato-Black.ttf in Resources */,
+				319F65E41D74F64C00D4E4EE /* Lato-Bold.ttf in Resources */,
 				3172F0EF1D74C54500F55511 /* LaunchScreen.storyboard in Resources */,
+				319F65E51D74F64C00D4E4EE /* Lato-MediumItalic.ttf in Resources */,
+				319F65E61D74F64C00D4E4EE /* Lato-Regular.ttf in Resources */,
 				3172F0EC1D74C54500F55511 /* Assets.xcassets in Resources */,
 				3172F0EA1D74C54500F55511 /* Main.storyboard in Resources */,
 			);

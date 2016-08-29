@@ -19,7 +19,7 @@ class Currency: CustomStringConvertible {
     var percents: Int = 0
     
     var titleCompare: String {
-        return "\(baseCurrency)->\(compareCurrency)"
+        return "\(baseCurrency) → \(compareCurrency)"
     }
     
     init(info: JSON)

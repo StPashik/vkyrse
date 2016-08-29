@@ -10,6 +10,11 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var currencyTitleLabel: UILabel!
+    @IBOutlet weak var rateLabel: UILabel!
+    @IBOutlet weak var percentsLabel: UILabel!
+    @IBOutlet weak var lastUpdateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -44,6 +49,13 @@ class MainViewController: UIViewController {
     //MARK: - Private methods
     
     private func showErrorAlert(message: String)
+    {
+        
+    }
+    
+    //MARK: - IBActions
+    
+    @IBAction func compareMenuTouch(sender: UIButton)
     {
         
     }
