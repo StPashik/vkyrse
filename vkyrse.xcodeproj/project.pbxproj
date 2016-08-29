@@ -12,6 +12,7 @@
 		3172F0EA1D74C54500F55511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3172F0E81D74C54500F55511 /* Main.storyboard */; };
 		3172F0EC1D74C54500F55511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3172F0EB1D74C54500F55511 /* Assets.xcassets */; };
 		3172F0EF1D74C54500F55511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3172F0ED1D74C54500F55511 /* LaunchScreen.storyboard */; };
+		9FF3E5B1DC6D343E72D181E6 /* Pods_vkyrse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F033EA2D9421A0A4759F8 /* Pods_vkyrse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		3172F0EB1D74C54500F55511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3172F0EE1D74C54500F55511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3172F0F01D74C54500F55511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9F033EA2D9421A0A4759F8 /* Pods_vkyrse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vkyrse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D0057759D2BAFF9566D4BD /* Pods-vkyrse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkyrse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse.debug.xcconfig"; sourceTree = "<group>"; };
+		EEDDE0F7586591E791EC637F /* Pods-vkyrse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkyrse.release.xcconfig"; path = "Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF3E5B1DC6D343E72D181E6 /* Pods_vkyrse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3172F0E31D74C54400F55511 /* vkyrse */,
 				3172F0E21D74C54400F55511 /* Products */,
+				B8A2D448F2BEB96F55FF30F5 /* Pods */,
+				3C3D764EF9419E6CCA22499D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = vkyrse;
 			sourceTree = "<group>";
 		};
+		3C3D764EF9419E6CCA22499D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F033EA2D9421A0A4759F8 /* Pods_vkyrse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8A2D448F2BEB96F55FF30F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0057759D2BAFF9566D4BD /* Pods-vkyrse.debug.xcconfig */,
+				EEDDE0F7586591E791EC637F /* Pods-vkyrse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3172F0F31D74C54500F55511 /* Build configuration list for PBXNativeTarget "vkyrse" */;
 			buildPhases = (
+				C632E75D0B8930BE452C8AA1 /* [CP] Check Pods Manifest.lock */,
 				3172F0DD1D74C54400F55511 /* Sources */,
 				3172F0DE1D74C54400F55511 /* Frameworks */,
 				3172F0DF1D74C54400F55511 /* Resources */,
+				FADBFEDF0C51272777932A68 /* [CP] Embed Pods Frameworks */,
+				AF6A69EF698914DB43C11C84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF6A69EF698914DB43C11C84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C632E75D0B8930BE452C8AA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FADBFEDF0C51272777932A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vkyrse/Pods-vkyrse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3172F0DD1D74C54400F55511 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		3172F0F41D74C54500F55511 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D0057759D2BAFF9566D4BD /* Pods-vkyrse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = vkyrse/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		3172F0F51D74C54500F55511 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDDE0F7586591E791EC637F /* Pods-vkyrse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = vkyrse/Info.plist;
@@ -286,6 +363,7 @@
 				3172F0F51D74C54500F55511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
